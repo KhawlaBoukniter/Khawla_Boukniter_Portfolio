@@ -4,7 +4,6 @@ import {
   FaBriefcase,
   FaFileCode,
   FaUserGraduate,
-  FaComments,
 } from "react-icons/fa";
 import { IconType } from "react-icons";
 
@@ -39,10 +38,5 @@ export const navigationData: navLinks[] = [
     label: "Academic Path",
     href: "/tabs/education",
     icon: FaUserGraduate,
-  },
-  {
-    label: "Let's Talk",
-    href: "/tabs/contact",
-    icon: FaComments,
   },
 ];

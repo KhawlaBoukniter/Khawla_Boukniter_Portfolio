@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
 
-const baseUrl = 'https://sakshi.is-cool.dev'
+const baseUrl = 'https://khawla-boukniter-portfolio.vercel.app/'
  
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -35,12 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/tabs/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
     },
   ]
 }

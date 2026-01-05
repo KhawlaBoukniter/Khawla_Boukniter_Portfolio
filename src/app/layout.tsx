@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sakshi.is-cool.dev"),
+  metadataBase: new URL("https://khawla-boukniter-portfolio.vercel.app/"),
   title: {
     default: "Khawla Boukniter | FullStack Web Developer",
     template: "%s | Khawla Boukniter",
