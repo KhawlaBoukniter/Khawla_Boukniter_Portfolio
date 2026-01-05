@@ -4,9 +4,9 @@ import ExperienceFlip from "@/components/ExperienceFlip";
 import ExperienceCard from "@/components/ExperienceCard";
 
 export const metadata: Metadata = {
-  title: "Experience",
+  title: "Expérience",
   description:
-    "Experience across full-stack development and product delivery, with a focus on building reliable solutions and working closely with teams to turn ideas into functional outcomes.",
+    "Expérience complète en développement full-stack et livraison de produits, avec un focus sur la création de solutions fiables et la collaboration étroite avec les équipes pour transformer les idées en résultats concrets.",
 };
 
 export default function ExperiencePage() {
@@ -20,14 +20,15 @@ export default function ExperiencePage() {
         <LogoBox className="size-20 place-content-center">
           <ExperienceFlip />
         </LogoBox>
-        <h1 className="cursor-default text-2xl font-bold">My Experience</h1>
+        <h1 className="cursor-default text-2xl font-bold">Mon Expérience</h1>
       </div>
 
       <p className="mt-4 cursor-default text-gray-500">
-        It&apos;s all about building things that matter, from crafting clean,
-        production ready web apps to shaping engaging learning experiences for
-        global audiences. Along the way I&apos;ve learned to move fast, solve
-        real problems, and create work that leaves an impact.
+        Il s'agit de construire des choses qui comptent, de développer des
+        applications web propres et prêtes pour la production à la création
+        d'expériences d'apprentissage engageantes. En chemin, j'ai appris à
+        avancer rapidement, à résoudre des problèmes réels et à créer un travail
+        qui a un impact concret.
       </p>
 
       <div className="mt-5 space-y-8">

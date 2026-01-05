@@ -7,34 +7,34 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex flex-col items-center md:items-start">
             <h2 className="text-xl font-semibold text-gray-600 md:text-2xl dark:text-gray-300">
-              Let&apos;s Work Together
+              Travaillons Ensemble
             </h2>
             <p className="mt-1 text-center text-xs whitespace-nowrap text-gray-800 md:text-sm dark:text-gray-400">
-              Collabs, roles, or big ideas? Let&apos;s make it happen
+              Collaborations, postes, ou grandes idées ? Faisons-le !
             </p>
             <SocialHandles />
           </div>
           <div className="flex flex-col items-center md:items-start">
             <p className="text-sm font-semibold tracking-wide text-gray-600 uppercase md:text-base dark:text-gray-300">
-              Response Time
+              Temps de Réponse
             </p>
             <p className="mt-1 text-xl font-semibold text-emerald-500 md:text-2xl dark:text-emerald-400">
-              &lt;3 hours
+              &lt;3 heures
             </p>
             <p className="mt-1 text-xs text-gray-800 md:text-sm dark:text-gray-400">
-              You&apos;ll hear back from me quickly!
+              Vous aurez une réponse rapidement !
             </p>
           </div>
         </div>
         <div>
           <p className="mt-9 text-center text-xs tracking-wide text-gray-800 md:mt-14 md:text-sm dark:text-gray-400">
-            © {new Date().getFullYear()} Sakshi Jaiswal. All rights reserved.
+            © {new Date().getFullYear()} Khawla Boukniter. Tous droits réservés.
           </p>
           <p className="mt-2 flex items-center justify-center gap-2 text-xs text-gray-800 md:mt-3 dark:text-gray-400">
-            <span>Made With</span>
+            <span>Fait avec</span>
             <img
               src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png"
-              alt="Red Heart"
+              alt="Cœur Rouge"
               width="18"
               height="18"
             />

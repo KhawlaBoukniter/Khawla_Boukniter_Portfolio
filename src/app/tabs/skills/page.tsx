@@ -8,9 +8,9 @@ import { FaLaptopCode } from "react-icons/fa";
 import SkillTags from "@/components/SkillsTags";
 
 export const metadata: Metadata = {
-  title: "My Skills",
+  title: "Mes Compétences",
   description:
-    "Versatile across front-end and back-end development, creating interfaces that feel intuitive and systems that scale with ease.",
+    "Polyvalente en développement frontend et backend, créant des interfaces intuitives et des systèmes qui s'échelonnent facilement.",
 };
 
 export default function SkillsPage() {
@@ -20,22 +20,23 @@ export default function SkillsPage() {
         <LogoBox className="size-20 place-content-center">
           <SkillFlip />
         </LogoBox>
-        <h1 className="cursor-default text-2xl font-bold">My SuperPowers</h1>
+        <h1 className="cursor-default text-2xl font-bold">Mes Superpouvoirs</h1>
       </div>
 
       <div className="mt-4 cursor-default space-y-6 text-sm leading-relaxed text-gray-600 md:text-base dark:text-gray-500">
         <p>
-          Every creator has their toolkit, but I like to think of mine as
-          superpowers. From weaving clean UIs to powering up backends, these are
-          the skills that help me turn ideas into experiences.
+          Chaque créateur a son arsenal d'outils, mais je préfère voir les miens comme
+          des superpouvoirs. De la conception d'interfaces épurées à l'animation de
+          backends puissants, ce sont ces compétences qui me permettent de transformer
+          des idées en expériences concrètes.
         </p>
       </div>
 
       <div className="py-8 lg:px-2">
         <div className="grid grid-cols-3 gap-2 sm:gap-4">
-          <SkillCard icon={<LuBrainCircuit />} label="Problem Solving" />
-          <SkillCard icon={<MdAutoGraph />} label="Performance Optimization" />
-          <SkillCard icon={<FaLaptopCode />} label="Responsive Design" />
+          <SkillCard icon={<LuBrainCircuit />} label="Résolution de Problèmes" />
+          <SkillCard icon={<MdAutoGraph />} label="Optimisation Performance" />
+          <SkillCard icon={<FaLaptopCode />} label="Design Responsive" />
         </div>
       </div>
 

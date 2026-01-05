@@ -15,33 +15,34 @@ export interface navLinks {
 }
 
 export const navigationData: navLinks[] = [
-  { 
+  {
     label: "Who am I ?",
     href: "/",
-    icon: FaUserTie 
+    icon: FaUserTie,
   },
-  { 
+  {
     label: "My Superpowers",
     href: "/tabs/skills",
-    icon: FaCode 
+    icon: FaCode,
   },
-  { label: "Experience & Impact",
+  {
+    label: "Experience & Impact",
     href: "/tabs/experience",
-    icon: FaBriefcase 
+    icon: FaBriefcase,
   },
-  { 
+  {
     label: "Things I've Built",
     href: "/tabs/projects",
-    icon: FaFileCode 
+    icon: FaFileCode,
   },
-  { 
+  {
     label: "Academic Path",
     href: "/tabs/education",
-    icon: FaUserGraduate 
+    icon: FaUserGraduate,
   },
-  { 
+  {
     label: "Let's Talk",
     href: "/tabs/contact",
-    icon: FaComments 
+    icon: FaComments,
   },
 ];

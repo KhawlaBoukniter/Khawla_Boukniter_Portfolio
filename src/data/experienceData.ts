@@ -1,5 +1,4 @@
-import Logo1 from "@/assets/experience/exp_logo_1.webp";
-import Logo2 from "@/assets/experience/exp_logo_2.webp";
+import Logo1 from "@/assets/experience/exp_logo_1.jpg";
 import { StaticImageData } from "next/image";
 
 export interface Experience {
@@ -9,34 +8,20 @@ export interface Experience {
   duration: string;
   description: string[];
   logo: StaticImageData;
-
 }
 
 export const experienceData: Experience[] = [
   {
     id: "1",
-    name: "Ansrsource",
-    role: "Junior Frontend Developer",
-    duration: "Sept 2024 — Jan 2025",
+    name: "ANEP (Agence Nationale des Équipements Publics)",
+    role: "Stagiaire Développeuse Web Full Stack",
+    duration: "Mai - Juillet 2025",
     logo: Logo1,
     description: [
-      "Delivered scalable, production-ready web applications, ensuring clean design, high performance, and seamless UX.",
-      "Shipped features quickly with minimal supervision, consistently meeting deadlines in fast-paced environments.",
-      "Developed a React-based portfolio platform with structured data handling, resulting in a 70% increase in client engagement.",
-      "Created automation tools like data scrapers and workflow scripts to reduce manual work and speed up onboarding.",
-    ],
-  },
-  {
-    id: "2",
-    name: "D2L",
-    role: "Web Developer",
-    duration: "Nov 2024 — Jan 2025",
-    logo: Logo2,
-    description: [
-      "Developed 20+ interactive course units on Brightspace LMS, enhancing user engagement across global edtech learners.",
-      "Leveraged AI tools to accelerate content delivery, reducing turnaround time while maintaining high quality standards.",
-      "Contributed engineering insights in agile SCRUM calls, boosting team productivity and guiding peers with solutions.",
-      "Solved UI/UX issues across Brightspace LMS modules using HTML, CSS, and JavaScript to ensure responsive design.",
+      "Conception et développement d'une application web complète pour gérer les employés, compétences, modules, cycles et évaluations de formation.",
+      "Implémentation du frontend réactif avec React.js et Tailwind CSS, garantissant une expérience utilisateur fluide et intuitive.",
+      "Développement du backend avec Node.js, Express.js et Sequelize pour une gestion structurée des données.",
+      "Intégration de MongoDB pour une gestion flexible des données et préparation au déploiement en environnement production.",
     ],
   },
 ];

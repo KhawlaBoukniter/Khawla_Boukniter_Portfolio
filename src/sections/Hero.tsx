@@ -1,5 +1,8 @@
 import FlipwordsAnimation from "@/components/FlipwordsAnimation";
 import ThemeToggle from "@/components/ThemeToggle";
+import Button from "@/components/Button";
+import { FaDownload } from "react-icons/fa";
+import { HiArrowRight } from "react-icons/hi";
 
 export default function Hero() {
   return (
@@ -11,26 +14,35 @@ export default function Hero() {
               href="#"
               className="text-lg font-bold tracking-wider md:text-3xl"
             >
-              Sakshi
+              Khawla
             </a>
             <ThemeToggle />
           </div>
           <div className="mt-9 cursor-default md:mt-28">
             <p className="mb-2 text-sm font-medium tracking-wide text-slate-200 md:text-xl lg:text-2xl">
-              Hi, I&apos;m
+              Bonjour, je suis
             </p>
             <h1 className="mb-2 -ml-1 text-4xl leading-tight text-white md:text-6xl md:leading-[1.15] lg:text-7xl">
-              Sakshi Jaiswal
+              Khawla Boukniter
             </h1>
             <div className="hero-tagline font-mono text-xs leading-snug font-normal text-slate-300 md:text-lg lg:text-xl">
               <div className="flex flex-wrap items-center gap-x-2">
-                <span>Web browsers are my canvas and</span>
+                <span>Les navigateurs web sont ma toile et</span>
                 <span className="flex items-center gap-2">
-                  <span>I love to paint them with</span>
+                  <span>j&apos;aime les peindre avec</span>
                   <FlipwordsAnimation />
                 </span>
               </div>
             </div>
+          </div>
+          <div className="mt-6 flex gap-4">
+            <Button
+              text="Voir mon CV"
+              icon={<FaDownload size={18} />}
+              href="/Khawla-Boukniter_CV.pdf"
+              title="Télécharger mon CV"
+              newTab
+            />
           </div>
         </div>
       </header>

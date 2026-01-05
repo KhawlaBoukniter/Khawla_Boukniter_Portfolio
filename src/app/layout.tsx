@@ -13,31 +13,29 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sakshi.is-cool.dev"),
   title: {
-    default: "Sakshi Jaiswal | FullStack Developer",
-    template: "%s | Sakshi Jaiswal",
+    default: "Khawla Boukniter | FullStack Web Developer",
+    template: "%s | Khawla Boukniter",
   },
   description:
     "Building fast, accessible, and SEO-friendly web experiences with modern tools like React, Next.js, and Node.js.",
   keywords: [
-    "Sakshi Jaiswal",
-    "Next.js Portfolio",
-    "Sakshi",
-    "FullStack Developer",
+    "Khawla Boukniter",
+    "FullStack Web Developer",
   ],
   twitter: {
     card: "summary_large_image",
   },
-  authors: [{ name: "Sakshi Jaiswal" }],
+  authors: [{ name: "Khawla Boukniter" }],
   icons: {
     icon: [
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/sakshi_logo.svg", type: "image/svg+xml" },
+      { url: "/Khawla-Logo.svg", type: "image/svg+xml" },
     ],
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
   appleWebApp: {
-    title: "Sakshi Jaiswal | FullStack Developer",
+    title: "Khawla Boukniter | FullStack Web Developer",
     capable: true,
     statusBarStyle: "default",
   },

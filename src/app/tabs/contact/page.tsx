@@ -5,9 +5,9 @@ import ContactForm from "@/components/ContactForm";
 import CallToAction from "@/components/CallToAction";
 
 export const metadata: Metadata = {
-  title: "Contact Me",
+  title: "Contactez-moi",
   description:
-    "Let’s connect! Whether it’s a potential project, collaboration, or just sharing ideas, I’m always open to meaningful conversations.",
+    "Contactons-nous ! Que ce soit pour un projet, une collaboration ou simplement échanger des idées, je suis toujours ouverte aux conversations enrichissantes.",
 };
 
 export default function ContactPage() {
@@ -23,14 +23,14 @@ export default function ContactPage() {
         </LogoBox>
 
         <h2 id="contact-heading" className="cursor-default text-2xl font-bold">
-          Contact Me
+          Contactez-moi
         </h2>
       </header>
       <p className="mt-4 cursor-default text-gray-500">
-        Great work starts with great conversations. Whether you want to
-        brainstorm ideas, collaborate on something exciting, or just say hi!
-        I&apos;m always open to meaningful chats. Let&apos;s connect and build
-        something worth talking about.
+        Les grands projets commencent par de grandes conversations. Que vous souhaitiez
+        échanger des idées, collaborer sur un projet excitant, ou simplement dire bonjour !
+        Je suis toujours ouverte aux discussions enrichissantes. Contactons-nous et construisons
+        quelque chose qui en vaille la peine.
       </p>
       <div className="relative h-full overflow-hidden">
         <div className="absolute top-1/2 w-[490px] -translate-x-[230px] -translate-y-1/2">

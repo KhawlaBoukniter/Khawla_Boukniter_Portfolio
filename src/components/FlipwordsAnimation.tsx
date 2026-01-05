@@ -99,12 +99,10 @@ export const FlipWords = ({
 const FlipwordsAnimation = () => {
   const phrases = [
     "React.js",
-    "Next.js",
     "Tailwind",
     "HTML",
     "CSS",
     "Javascript",
-    "Motion",
   ];
 
   return (

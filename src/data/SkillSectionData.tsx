@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -6,23 +7,44 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
-  FaStripeS,
-  FaShopify,
   FaFigma,
+  FaJava,
+  FaDocker,
+  FaTrello,
+  FaCode,
+  FaTerminal,
+  FaSitemap ,
+  FaExchangeAlt 
 } from "react-icons/fa";
+
 import {
   SiJavascript,
-  SiTypescript,
   SiMongodb,
   SiExpress,
   SiPostman,
-  SiMailtrap,
-  SiVercel,
-  SiRender,
-  SiRedux,
+  SiPhp,
+  SiLaravel,
+  SiPostgresql,
+  SiMysql,
+  SiDjango,
+  SiPython,
+  SiSpringboot,
+  SiSpringsecurity,
+  SiSequelize,
+  SiApachemaven,
+  SiSwagger,
+  SiJunit5,
+  SiSelenium,
+  SiJira,
+  SiGithubactions ,
 } from "react-icons/si";
+
+import { DiScrum } from "react-icons/di";
+
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+
+import { MdViewKanban } from "react-icons/md";
 
 export type SkillTag = {
   icon: ReactNode;
@@ -32,93 +54,76 @@ export type SkillTag = {
 
 export const SkillSections: { title: string; skills: SkillTag[] }[] = [
   {
-    title: "Crafting Stunning Interfaces",
+    title: "Frontend",
     skills: [
-      {
-        icon: <FaHtml5 size={17} className="text-orange-500" />,
-        label: "HTML",
-      },
-      {
-        icon: <FaCss3Alt size={17} className="text-blue-500" />,
-        label: "CSS",
-      },
-      {
-        icon: <SiJavascript size={13} className="text-yellow-400" />,
-        label: "Javascript",
-      },
-      {
-        icon: <SiTypescript size={13} className="text-blue-500" />,
-        label: "Typescript",
-      },
-      {
-        icon: <FaReact size={16} className="text-sky-400" />,
-        label: "React.js",
-      },
-      {
-        icon: <RiNextjsFill size={19} />,
-        label: "Next.js",
-      },
-      {
-        icon: <RiTailwindCssFill size={17} className="text-sky-400" />,
-        label: "Tailwind CSS",
-      },
-      {
-        icon: <TbBrandFramerMotion size={15} className="text-pink-500" />,
-        label: "Framer Motion",
-      },
-      {
-        icon: <SiRedux size={13} className="text-blue-500" />,
-        label: "Redux",
-      },
+      { icon: <FaHtml5 />, label: "HTML" },
+      { icon: <FaCss3Alt />, label: "CSS" },
+      { icon: <SiJavascript />, label: "JavaScript" },
+      { icon: <FaReact />, label: "React.js" },
+      { icon: <RiTailwindCssFill />, label: "Tailwind CSS" },
+      { icon: <TbBrandFramerMotion />, label: "Three.js" },
+      { icon: <FaReact />, label: "Angular" },
     ],
   },
   {
-    title: "Building Robust Backends",
+    title: "Backend",
     skills: [
-      {
-        icon: <FaNodeJs size={16} className="text-green-500" />,
-        label: "Node.js",
-      },
-      {
-        icon: <SiExpress size={16} className="text-blue-500" />,
-        label: "Express",
-      },
-      {
-        icon: <SiMongodb size={16} className="text-green-500" />,
-        label: "MongoDB",
-      },
+      { icon: <SiPhp />, label: "PHP" },
+      { icon: <SiPython />, label: "Python" },
+      { icon: <FaJava />, label: "Java" },
+      { icon: <FaNodeJs />, label: "Node.js" },
+
+      { icon: <SiLaravel />, label: "Laravel" },
+      { icon: <SiDjango />, label: "Django" },
+      { icon: <SiSpringboot />, label: "Spring Boot" },
+      { icon: <SiSpringsecurity />, label: "Spring Security" },
+      { icon: <SiExpress />, label: "Express.js" },
+      { icon: <FaJava />, label: "JEE" },
+      { icon: <SiSequelize />, label: "Sequelize" },
+      { icon: <FaNodeJs />, label: "API REST" },
+    ],
+  },
+
+  {
+    title: "Databases",
+    skills: [
+      { icon: <SiPostgresql />, label: "PostgreSQL" },
+      { icon: <SiMysql />, label: "MySQL" },
+      { icon: <SiMongodb />, label: "MongoDB" },
     ],
   },
   {
-    title: "Modern Tooling",
+    title: "Outils & DevOps",
     skills: [
-      {
-        icon: <FaGitAlt size={19} className="text-orange-500" />,
-        label: "Git",
-      },
-      { icon: <FaGithub size={16} />, label: "Github" },
-      {
-        icon: <FaStripeS size={13} className="text-indigo-500" />,
-        label: "Stripe",
-      },
-      {
-        icon: <FaShopify size={16} className="text-lime-500" />,
-        label: "Shopify",
-      },
-      {
-        icon: <FaFigma size={13} className="text-pink-400" />,
-        label: "Figma",
-      },
-      {
-        icon: <SiPostman size={16} className="text-orange-400" />,
-        label: "Postman",
-      },
-      {
-        icon: <SiMailtrap size={16} className="text-green-500" />,
-        label: "Mailtrap",
-      },
-      { icon: <SiVercel size={13} />, label: "Vercel" },
-      { icon: <SiRender size={11} />, label: "Render" },
+      { icon: <FaGitAlt />, label: "Git" },
+      { icon: <FaGithub />, label: "GitHub" },
+      { icon: <FaFigma />, label: "Figma" },
+      { icon: <SiPostman />, label: "Postman" },
+      { icon: <FaDocker />, label: "Docker" },
+      { icon: <SiApachemaven />, label: "Maven" },
+      { icon: <SiSwagger />, label: "Swagger" },
+    ],
+  },
+  {
+    title: "Tests & Méthodologies",
+    skills: [
+      { icon: <SiJunit5 />, label: "JUnit 5" },
+      { icon: <FaCode />, label: "Mockito" },
+      { icon: <FaCode />, label: "Jacoco" },
+      { icon: <SiSelenium />, label: "Selenium" },
+      { icon: <DiScrum />, label: "Scrum" },
+      { icon: <MdViewKanban />, label: "Kanban" },
+      { icon: <SiJira />, label: "Jira" },
+      { icon: <FaTrello />, label: "Trello" },
+    ],
+  },
+  {
+    title: "Autres",
+    skills: [
+      { icon: <FaTerminal />, label: "C" },
+      { icon: <FaSitemap  />, label: "UML" },
+      { icon: <SiGithubactions  />, label: "CI/CD" },
+      { icon: <FaExchangeAlt  />, label: "Kafka" },
     ],
   },
 ];

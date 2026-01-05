@@ -80,7 +80,7 @@ export async function POST(request: Request) {
         <p style="margin: 0; font-size: 16px; white-space: pre-wrap; color: #333;">${message}</p>
       </div>
       <p style="margin-top: 32px; font-size: 14px; color: #999; text-align: center;">
-        © 2025 Sakshi Jaiswal. All rights reserved.
+        © 2026 Khawla Boukniter. All rights reserved.
       </p>
     </div>
   </div>
@@ -88,7 +88,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: `${fullName} <onboarding@resend.dev>`,
-      to: "thesakshijaiswal@outlook.com",
+      to: "boukniter.khawla@gmail.com",
       replyTo: email,
       subject: `New message from ${fullName} via Prettyfolio`,
       html,

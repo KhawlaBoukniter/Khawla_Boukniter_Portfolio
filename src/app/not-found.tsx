@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="mx-auto max-w-5xl px-4 py-8 pb-40 text-center text-white md:pt-16">
         <div className="flex items-center justify-between">
           <a href="#" className="text-lg font-bold tracking-wider md:text-3xl">
-            Sakshi
+            Khawla
           </a>
           <ThemeToggle />
         </div>
@@ -18,14 +18,14 @@ export default function NotFound() {
             404
           </h3>
           <div className="pb-12 font-mono text-xs leading-snug text-slate-300 md:w-2xl md:text-lg lg:text-xl">
-            Like a broken link in code, this path leads nowhere. Let&apos;s get
-            back to the journey and keep exploring.
+            Comme un lien cassé dans le code, ce chemin ne mène nulle part.
+            Reprenons le parcours et continuons l'exploration.
           </div>
           <Button
-            text="Go Back Home"
+            text="Retour à l'accueil"
             icon={<HiArrowRight size={16} />}
             href="/"
-            title="Go Back Home"
+            title="Retour à l'accueil"
           />
         </div>
       </div>

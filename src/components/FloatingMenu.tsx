@@ -227,11 +227,10 @@ export default function FloatingMenu() {
                       e.stopPropagation();
                       handleNavClick(link.href);
                     }}
-                    className={`absolute flex items-center justify-center rounded-full shadow-lg transition-colors ${
-                      isActive
+                    className={`absolute flex items-center justify-center rounded-full shadow-lg transition-colors ${isActive
                         ? "bg-blue-500 text-white"
                         : "bg-white text-gray-700 dark:bg-[#2d2f3e] dark:text-gray-200"
-                    }`}
+                      }`}
                     style={{
                       width: MENU_ITEM_SIZE,
                       height: MENU_ITEM_SIZE,

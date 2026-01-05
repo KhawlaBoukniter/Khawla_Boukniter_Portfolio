@@ -10,26 +10,26 @@ export interface Education {
 export const educationData: Education[] = [
   {
     id: "1",
-    name: "Sant Gadge Baba Amravati University",
-    degree: "B.E in Computer Science and Engineering",
-    duration: "July 2020 — June 2024",
-    location: "Malkapur, Maharashtra",
-    score: "8.49 CGPA",
+    name: "YouCode - UM6P",
+    degree: "Développement Web Full Stack (PHP - Java)",
+    duration: "2024 - 2026",
+    location: "Safi, Maroc",
+    score: "En cours",
   },
   {
     id: "2",
-    name: "Municipal Jr. College",
-    degree: "Senior Secondary (HSC)",
-    duration: "Nov 2024 — Jan 2025",
-    location: "Malkapur, Maharashtra",
-    score: "82.63%"
+    name: "ALX - Software Engineering",
+    degree: "Certification",
+    duration: "2022 - 2023",
+    location: "Online",
+    score: "Validée",
   },
   {
     id: "3",
-    name: "G.V.M Vidyalaya",
-    degree: "Junior Secondary (SSC)",
-    duration: "Nov 2024 — Jan 2025",
-    location: "Malkapur, Maharashtra", 
-    score: "89.40%"
+    name: "Lycée Al Khawarizmi",
+    degree: "Baccalauréat Sciences Mathématiques",
+    duration: "2022",
+    location: "Safi, Maroc",
+    score: "Obtenu",
   },
 ];

@@ -34,19 +34,19 @@ export function validateContactForm(
   const errors: ContactFormErrors = {};
 
   if (!data.firstName || data.firstName.trim().length < 2) {
-    errors.firstName = "Please enter a valid first name.";
+    errors.firstName = "Veuillez entrer un prénom valide.";
   }
 
   if (!data.email) {
-    errors.email = "Email is required.";
+    errors.email = "L'email est obligatoire.";
   } else if (!EMAIL_REGEX.test(data.email.trim())) {
-    errors.email = "Enter a valid email address.";
+    errors.email = "Veuillez entrer une adresse email valide.";
   }
 
   if (!data.message || data.message.trim().length < 20) {
-    errors.message = "Message must be at least 20 characters.";
+    errors.message = "Le message doit contenir au moins 20 caractères.";
   } else if (CODE_REGEX.test(data.message)) {
-    errors.message = "Code or HTML is not allowed in the message.";
+    errors.message = "Le code ou HTML n'est pas autorisé dans le message.";
   }
 
   return errors;
