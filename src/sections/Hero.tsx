@@ -35,15 +35,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="mt-6 flex gap-4">
-            <Button
-              text="Voir mon CV"
-              icon={<FaDownload size={18} />}
-              href="/Khawla-Boukniter_CV.pdf"
-              title="Télécharger mon CV"
-              newTab
-            />
-          </div>
         </div>
       </header>
     </section>
