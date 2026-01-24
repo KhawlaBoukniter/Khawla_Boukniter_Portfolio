@@ -1,32 +1,14 @@
 import { ReactNode } from "react";
 import { StaticImageData } from "next/image";
-import {
-  FaReact,
-  FaNodeJs,
-  FaFigma,
-  FaHardHat,
-  FaRedditAlien,
-} from "react-icons/fa";
-import {
-  SiExpress,
-  SiMongodb,
-  SiJavascript,
-  SiTypescript,
-  SiRedux,
-  SiSolidity,
-  SiThirdweb,
-} from "react-icons/si";
 
-import {
-  RiNextjsFill,
-  RiTailwindCssFill,
-  RiTwitterXLine,
-} from "react-icons/ri";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import ProjectImg1 from "@/assets/projects/becommerce-mock.webp";
-import ProjectImg2 from "@/assets/projects/rewarder-mock.webp";
-import ProjectImg3 from "@/assets/projects/fundverse-mock.webp";
-import ProjectImg4 from "@/assets/projects/fusion-mock.webp";
+import { FaReact, FaLaravel, FaStripe, FaPhp, FaLinux, FaTerminal, FaCode, FaPython, FaBootstrap, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiTailwindcss, SiC, SiDjango, SiSqlite } from "react-icons/si";
+import { TbCube3dSphere } from "react-icons/tb";
+import { MdMemory } from "react-icons/md";
+
+import ProjectImg1 from "@/assets/projects/artspace-mock.png";
+import ProjectImg2 from "@/assets/projects/simpleShell.gif";
+// import ProjectImg3 from "@/assets/projects/basicblogger-mock.webp";
 
 export interface SkillTag {
   icon: ReactNode;
@@ -48,181 +30,73 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   {
     id: 1,
-    title: "BE Commerce",
+    title: "ArtSpace",
     image: ProjectImg1,
     description:
-      "A full-stack eCommerce platform with payments, product management, and reviews.",
+      "Plateforme de galerie d'art virtuelle 3D avec portfolios artistes, billetterie événements et paiements sécurisés",
     skills: [
-      {
-        icon: <FaReact size={16} className="text-sky-400" />,
-        label: "React.js",
-      },
-      { icon: <SiRedux size={13} className="text-blue-500" />, label: "Redux" },
-      {
-        icon: <FaNodeJs size={16} className="text-green-500" />,
-        label: "Node.js",
-      },
-      {
-        icon: <SiExpress size={15} className="text-blue-500" />,
-        label: "Express",
-      },
-      {
-        icon: <SiMongodb size={16} className="text-green-500" />,
-        label: "MongoDB",
-      },
-      {
-        icon: <RiTailwindCssFill size={16} className="text-sky-400" />,
-        label: "Tailwind CSS",
-      },
-      {
-        icon: <TbBrandFramerMotion size={16} className="text-pink-600" />,
-        label: "Framer Motion",
-      },
+      { icon: <FaReact size={16} className="text-cyan-400" />, label: "React" },
+      { icon: <FaLaravel size={16} className="text-red-500" />, label: "Laravel" },
+      { icon: <TbCube3dSphere size={16} className="text-purple-400" />, label: "Three.js" },
+      { icon: <SiTailwindcss size={16} className="text-teal-400" />, label: "Tailwind CSS" },
+      { icon: <FaStripe size={16} className="text-indigo-400" />, label: "Stripe" },
+      { icon: <FaPhp size={16} className="text-blue-400" />, label: "PHP" },
     ],
-    repo: "https://github.com/thesakshijaiswal/be-commerce",
-    live: "https://be-commerce-q7nw.onrender.com/",
+    repo: "https://github.com/KhawlaBoukniter/ArtSpace",
+    live: "", // TODO: ajoute ton lien si tu le déploies
     details: [
-      "BE-Commerce started as my attempt to build a complete online shopping experience from scratch. I wanted users to browse, review, and actually make purchases in real time with stripe.",
-      "I designed a clean, responsive UI with Tailwind CSS that feels natural on any device. Featuring shimmer loaders, pagination, and real-time order tracking timeline.",
-      "On the backend, I created a secure authentication system using JWT, bcrypt, Google OAuth and mailtrap, ensuring users could safely register, log in, and manage their profiles.",
-      "Built on the MERN stack with Express and MongoDB, the system handles products, users, and images efficiently through a well structured REST API and Cloudinary integration.",
+      "J'ai développé une application full-stack permettant aux artistes d'exposer leurs œuvres dans des galeries 3D immersives créées avec Three.js",
+      "J'ai implémenté un système complet de gestion d'événements avec billetterie, réservations, paiements Stripe et génération de QR codes",
+      "J'ai conçu une architecture backend Laravel avec authentification multi-rôles (Admin, Artiste, Visiteur) et 13 modèles Eloquent interconnectés",
+      "J'ai intégré des animations fluides et une interface moderne en Tailwind CSS pour une expérience utilisateur premium",
     ],
   },
+
   {
     id: 2,
-    title: "Rewarder",
+    title: "Simple Shell",
     image: ProjectImg2,
     description:
-      "A gamified task reward app designed to build consistency with micro-goals.",
+      "Interpréteur de commandes UNIX en C avec support des opérateurs logiques, variables d'environnement et builtins avancés",
     skills: [
-      {
-        icon: <FaReact size={16} className="text-sky-400" />,
-        label: "React.js",
-      },
-      {
-        icon: <SiExpress size={15} className="text-blue-500" />,
-        label: "Express",
-      },
-      {
-        icon: <RiTailwindCssFill size={16} className="text-sky-400" />,
-        label: "Tailwind CSS",
-      },
-      {
-        icon: <FaNodeJs size={16} className="text-green-500" />,
-        label: "Node.js",
-      },
-      {
-        icon: <SiMongodb size={16} className="text-green-500" />,
-        label: "MongoDB",
-      },
-      {
-        icon: (
-          <RiTwitterXLine size={16} className="text-black dark:text-white" />
-        ),
-        label: "Twitter API",
-      },
-      {
-        icon: <FaRedditAlien size={16} className="text-orange-500" />,
-        label: "Reddit API",
-      },
+      { icon: <SiC size={16} className="text-blue-600" />, label: "C" },
+      { icon: <FaLinux size={16} className="text-yellow-500" />, label: "Linux" },
+      { icon: <FaTerminal size={16} className="text-gray-700 dark:text-gray-300" />, label: "Unix" },
+      { icon: <MdMemory size={16} className="text-purple-600" />, label: "System Programming" },
+      { icon: <FaCode size={16} className="text-green-600" />, label: "Algorithms" },
     ],
-    repo: "https://github.com/thesakshijaiswal/rewarder",
-    live: "https://rewarder-dashboard.onrender.com/",
+    repo: "https://github.com/KhawlaBoukniter/simple_shell",
+    live: "https://khawlaboukniter.github.io/simple_shell/",
     details: [
-      "Rewarder was my take on making social media more purposeful a gamified MERN-based app where users earn rewards for consistent engagement and meaningful activity.",
-      "I integrated Twitter and Reddit APIs to bring real-time content into the platform, allowing users to explore, save, report, and share posts while maintaining a smooth and responsive experience.",
-      "The system uses secure, role-based authentication with JWT and bcrypt, along with protected admin routes for efficient user and content moderation.",
-      "An analytics-driven admin dashboard displays charts and metrics for posts, users, and platform activity, all optimized for performance with a 100/100 PageSpeed score.",
+      "J'ai implémenté un shell UNIX complet en C avec gestion des processus via fork/exec et recherche automatique dans le PATH",
+      "J'ai développé des commandes intégrées (exit, cd, env, setenv, unsetenv, history, alias, help) avec parsing robuste",
+      "J'ai intégré le support des opérateurs logiques (&&, ||, ;) et le remplacement de variables ($?, $$, $VARIABLE)",
+      "J'ai conçu une architecture modulaire avec gestion rigoureuse de la mémoire, listes chaînées et historique persistant",
     ],
   },
+
   {
     id: 3,
-    title: "FundVerse",
-    image: ProjectImg3,
+    title: "BasicBlogger",
+    image: ProjectImg2,
     description:
-      "A platform enabling transparent fundraising with secure transactions and project updates.",
+      "Plateforme de blog Django avec système de commentaires, authentification et gestion de profils utilisateurs.",
     skills: [
-      {
-        icon: <FaReact size={16} className="text-sky-400" />,
-        label: "React.js",
-      },
-      {
-        icon: (
-          <SiJavascript
-            size={13}
-            className="text-yellow-500 dark:text-yellow-300"
-          />
-        ),
-        label: "JavaScript",
-      },
-      {
-        icon: <FaNodeJs size={16} className="text-green-500" />,
-        label: "Node.js",
-      },
-      {
-        icon: <RiTailwindCssFill size={16} className="text-sky-400" />,
-        label: "Tailwind CSS",
-      },
-      {
-        icon: <SiSolidity size={16} className="text-black dark:text-white" />,
-        label: "Solidity",
-      },
-      {
-        icon: (
-          <FaHardHat
-            size={16}
-            className="text-yellow-500 dark:text-yellow-300"
-          />
-        ),
-        label: "Hardhat",
-      },
-      {
-        icon: <SiThirdweb size={16} className="text-pink-600" />,
-        label: "ThirdWeb",
-      },
+      { icon: <FaPython size={16} className="text-yellow-500" />, label: "Python" },
+      { icon: <SiDjango size={16} className="text-green-600" />, label: "Django" },
+      { icon: <SiSqlite size={16} className="text-sky-600" />, label: "SQLite" },
+      { icon: <FaBootstrap size={16} className="text-purple-600" />, label: "Bootstrap" },
+      { icon: <FaHtml5 size={16} className="text-orange-500" />, label: "HTML5" },
+      { icon: <FaCss3Alt size={16} className="text-blue-500" />, label: "CSS3" },
     ],
-    repo: "https://github.com/thekiranmahajan/FundVerse",
-    live: "https://fundverse-by-us.vercel.app",
+    repo: "https://github.com/MRX-Baiz/posts",
+    live: "https://khawla0.pythonanywhere.com/",
     details: [
-      "FundVerse started as my curiosity to see if crowdfunding could exist without middleman, built purely on trust and transparency through blockchain.",
-      "I built it as a decentralized application on Ethereum using Solidity and React, deploying smart contracts on the Sepolia testnet to simulate real world blockchain transactions.",
-      "Using Thirdweb and Hardhat, my team tackled challenges around gas optimization ensuring that every campaign from creation to donation or deletion remained secure and traceable.",
-      "What began as an experiment evolved into a fully functional DApp counting 30+ active campaigns, earning 3rd prize at a national level expo for innovation in blockchain based systems.",
-    ],
-  },
-  {
-    id: 4,
-    title: "Fusion",
-    image: ProjectImg4,
-    description:
-      "A curated UI showcase built with Next.js and TypeScript to experiment with animations and layouts.",
-    skills: [
-      { icon: <RiNextjsFill size={19} />, label: "Next.js" },
-      {
-        icon: <SiTypescript size={13} className="text-blue-500" />,
-        label: "TypeScript",
-      },
-      {
-        icon: <RiTailwindCssFill size={17} className="text-sky-400" />,
-        label: "Tailwind CSS",
-      },
-      {
-        icon: <TbBrandFramerMotion size={15} className="text-pink-500" />,
-        label: "Framer Motion",
-      },
-      {
-        icon: <RiTailwindCssFill size={17} className="text-indigo-400" />,
-        label: "Tailwind Merge",
-      },
-      { icon: <FaFigma size={13} className="text-pink-400" />, label: "Figma" },
-    ],
-    repo: "https://github.com/thesakshijaiswal/fusion",
-    live: "https://fusion-dashboard-ten.vercel.app/",
-    details: [
-      "This project started as an interactive experiment to create a playful, collaborative interface, inspired by Figma's real time multiplayer experience.",
-      "I designed a custom multiplayer cursor and animated hero cards with drag-and-drop, giving users a sense of direct interaction and control.",
-      "Infinite scroll effects, scroll triggered text reveals, and interactive hover animations were added with Framer Motion to keep the interface lively and engaging.",
-      "Even supporting elements like FAQs and integrations were brought to life with smooth animations and bidirectional scrolling, delivering a polished, startup grade user experience.",
+      "J'ai développé un système CRUD complet pour les articles de blog avec permissions basées sur les utilisateurs",
+      "J'ai implémenté un système d'authentification (inscription, connexion, récupération de mot de passe par email)",
+      "J'ai créé un système de commentaires permettant aux utilisateurs d'interagir sur les articles",
+      "J'ai intégré la gestion de profils avec upload d'images et validation des extensions de fichiers",
+      "J'ai conçu une interface responsive avec Bootstrap et Django Crispy Forms",
     ],
   },
 ];

@@ -63,7 +63,7 @@ export default function ProjectsPage() {
           <Button
             text="Voir tous mes projets"
             icon={<HiArrowRight size={18} />}
-            href="https://github.com/Khawla-Boukniter"
+            href="https://github.com/KhawlaBoukniter"
             title="Voir tous mes projets"
             newTab
           />
