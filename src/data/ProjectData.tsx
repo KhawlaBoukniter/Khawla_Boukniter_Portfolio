@@ -8,7 +8,7 @@ import { MdMemory } from "react-icons/md";
 
 import ProjectImg1 from "@/assets/projects/artspace-mock.png";
 import ProjectImg2 from "@/assets/projects/simpleShell.gif";
-// import ProjectImg3 from "@/assets/projects/basicblogger-mock.webp";
+import ProjectImg3 from "@/assets/projects/basicblogger-mock.png";
 
 export interface SkillTag {
   icon: ReactNode;
@@ -78,7 +78,7 @@ export const projects: ProjectData[] = [
   {
     id: 3,
     title: "BasicBlogger",
-    image: ProjectImg2,
+    image: ProjectImg3,
     description:
       "Plateforme de blog Django avec système de commentaires, authentification et gestion de profils utilisateurs.",
     skills: [
